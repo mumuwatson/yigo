@@ -1,0 +1,38 @@
+{
+    "formTemplate": "normal",
+    "mergeGridLayout": true,
+    "mergeGridLayoutTitle": "基础",
+    "items":  [
+                "NoticeNo",
+                "Query",
+                "Grid0"
+                
+    ],
+    "controls": {
+        "Grid0": {
+            "control": "TextGrid",
+            "rightElement": {
+                "type": "element",
+                "elementType": "HasDetailSign"
+            },
+            "itemNumberOfLines": 2,
+            "primaryKey": {
+                "type": "element",
+                "elementType": "MultiControl",
+                "elementProps": {
+                    "from": "MaterialId",
+                    "to": "Status"
+                }
+            },
+            "secondKey": {
+                "type": "element",
+                "elementType": "MultiControl",
+                "elementProps": {
+                    "from": "OwnerId_LV",
+                    "to": "ManufDate"
+                }
+            }
+        }
+    },
+    "ignoredControl": []
+}

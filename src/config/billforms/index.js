@@ -1,7 +1,9 @@
 import defaultForm from './default.json';
-import SD_SaleOrder from './SD_SaleOrder.json';
+import V_InboundNoticeView from './V_InboundNoticeView.json';
+import OutboundNoticeReport from './OutboundNoticeReport.json';
 
 export default {
     default: defaultForm,
-    SD_SaleOrder,
+    V_InboundNoticeView,
+    OutboundNoticeReport
 };

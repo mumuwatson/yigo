@@ -1,0 +1,40 @@
+{
+    "formTemplate": "tabs",
+    "mergeGridLayout": true,
+    "mergeGridLayoutTitle": "基础",
+    "tabs": [
+        {
+            "caption": "基本",
+            "isGroup": false,
+            "items": [
+                "NoticeNo"
+            ]
+        },
+        {
+            "caption": "明细",
+            "isGroup": false,
+            "isGrid": true,
+            "grid": "ListView0"
+        }
+    ],
+    "controls": {
+        "ListView0": {
+            "control": "TextGrid",
+            "rightElement": {
+                "type": "element",
+                "elementType": "HasDetailSign"
+            },
+            "itemNumberOfLines": 1,
+            "primaryKey": {
+                "type": "element",
+                "elementType": "MultiControl",
+                "elementProps": {
+                    "from": "NoticeNo_LV",
+                    "to": "ManufDate",
+                    "third": "BasicQty"
+                }
+            }
+        }
+    },
+    "ignoredControl": []
+}

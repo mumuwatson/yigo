@@ -20,6 +20,7 @@ export default baseConfig({
         chunkFilename: '[name].[chunkhash].chunk.js',
     },
     plugins: [
+        new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"', __DEV__: false }),
         new ContextReplacementPlugin(/moment[\/\\]locale$/, /zh-\S{2}|en-\S{2}/),
         new CommonsChunkPlugin({
             name: 'vendor',

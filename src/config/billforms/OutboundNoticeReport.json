@@ -1,0 +1,31 @@
+{
+    "formTemplate": "normal",
+    "mergeGridLayout": true,
+    "mergeGridLayoutTitle": "基础",
+    "items":  [
+                "Material",
+                "query",
+                "Grid0"
+                
+    ],
+    "controls": {
+        "Grid0": {
+            "control": "TextGrid",
+            "rightElement": {
+                "type": "element",
+                "elementType": "HasDetailSign"
+            },
+            "itemNumberOfLines": 2,
+            "primaryKey": {
+                "type": "element",
+                "elementType": "MultiControl",
+                "elementProps": {
+                    "from": "No_L",
+                    "to": "Status_L",
+                    "third":"qty"
+                }
+            }
+        }
+    },
+    "ignoredControl": []
+}

@@ -5,6 +5,12 @@
         },
         "title": "请假单" 
     },
+    "V_InboundNoticeView": {
+        "title": "入库通知单" 
+    },
+    "OutboundNoticeReport": {
+        "title": "库存汇总查询" 
+    },
     "B_TravelExpenseApply": {
         "title": "差旅(探亲)申请单"
     },
